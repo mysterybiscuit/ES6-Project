@@ -1,5 +1,5 @@
 export class HTTP {
-  static fetchData = url => {
+  static fetchData(url) {
     return new Promise((resolve, reject) => {
       const HTTP = new XMLHttpRequest();
       HTTP.open("GET", url);
@@ -13,5 +13,5 @@ export class HTTP {
       };
       HTTP.send();
     });
-  };
+  }
 }
